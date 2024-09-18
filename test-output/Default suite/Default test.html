@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 18 15:01:43 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>421 seconds (421097 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add an Agency Link", "Agency Page Navigation Functionality"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5940ba097e72e1ee0b3bb22a3e52a887, clickElement {id=f.F975115BC5C6C6DEE99F9D54B937A1AD.d.6C75E97A4D86815620121ED051B0358F.e.1876}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64574/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5940ba097e72e1ee0b3bb22a3e52a887)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: 5940ba097e72e1ee0b3bb22a3e52a887
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1994634331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1994634331'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5940ba097e72e1ee0b3bb22a3e52a887, clickElement {id=f.F975115BC5C6C6DEE99F9D54B937A1AD.d.6C75E97A4D86815620121ED051B0358F.e.1876}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64574/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5940ba097e72e1ee0b3bb22a3e52a887)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: 5940ba097e72e1ee0b3bb22a3e52a887
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+</pre></div></td>
+<td>21</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add New Account Link", "Agency Page Navigation Functionality"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b484b6e4adadc06f1fca7cb7c55e3f8d, clickElement {id=f.7211E986030DE5A33C4EB88CFBC7E348.d.313B9D5E20D233A80BB43EF744905840.e.1879}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64518/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b484b6e4adadc06f1fca7cb7c55e3f8d)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: b484b6e4adadc06f1fca7cb7c55e3f8d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1930842682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1930842682'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b484b6e4adadc06f1fca7cb7c55e3f8d, clickElement {id=f.7211E986030DE5A33C4EB88CFBC7E348.d.313B9D5E20D233A80BB43EF744905840.e.1879}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64518/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b484b6e4adadc06f1fca7cb7c55e3f8d)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: b484b6e4adadc06f1fca7cb7c55e3f8d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+</pre></div></td>
+<td>21</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login and navigation to the home page", "Home page Functionality"</td>
+<td></td>
+<td>29</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login is successful with valid credentials", "Login Page of ShoutAboutUs page"</td>
+<td></td>
+<td>20</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Agency Resources link", "Agency Resources page Navigation Functionality"</td>
+<td></td>
+<td>36</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Manage Location Link", "Agency Page Navigation Functionality"</td>
+<td></td>
+<td>36</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Manage Account2 Link", "Agency Page Navigation Functionality"</td>
+<td></td>
+<td>34</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Client Reporting Link", "Client  Reporting page Navigation Functionality"</td>
+<td></td>
+<td>34</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error Notifications link", "Error Notifications page Navigation Functionality"</td>
+<td></td>
+<td>35</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Agency  Reporting Link", "Agency Reporting page Navigation Functionality"</td>
+<td></td>
+<td>35</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Manage Users Link", "Agency Page Navigation Functionality"</td>
+<td></td>
+<td>35</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Settings link", "Settings page Navigation Functionality"</td>
+<td></td>
+<td>34</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+<tr>
+<td title='TestRunner.Testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Manage Account Link", "Agency Page Navigation Functionality"</td>
+<td></td>
+<td>44</td>
+<td>TestRunner.Testrunner@33065d67</td></tr>
+</table><p>
+</body>
+</html>

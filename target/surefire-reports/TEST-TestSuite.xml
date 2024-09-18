@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="36.872" tests="13" errors="0" skipped="0" failures="12">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\DemoSAU\target\test-classes;E:\DemoSAU\target\classes;C:\Users\admin\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\admin\Downloads\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire4902014723412426971\surefirebooter-20240826181210785_3.jar C:\Users\admin\AppData\Local\Temp\surefire4902014723412426971 2024-08-26T18-12-10_664-jvmRun1 surefire-20240826181210785_1tmp surefire_0-20240826181210785_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\DemoSAU\target\test-classes;E:\DemoSAU\target\classes;C:\Users\admin\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\admin\Downloads\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\DemoSAU"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire4902014723412426971\surefirebooter-20240826181210785_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.3+9-LTS"/>
+    <property name="user.name" value="admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.3+9"/>
+    <property name="localRepository" value="C:\Users\admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="E:\DemoSAU"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\admin\Downloads\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/admin/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530/jre/bin/server;C:/Users/admin/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-21;C:\Program Files\Git\cmd;C:\apache-maven-3.9.8\bin;C:\Program Files\nodejs\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\Downloads\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.3+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Manage Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;](1)" classname="TestRunner.Testrunner" time="35.209">
+    <system-out><![CDATA[
+Scenario: Manage Account Link                                                       &amp#27;[90m# src/test/resources/Features/agency.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+I am Successfullly landed on Superadmin page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the manage account link&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Agency.i_click_on_the_manage_account_link()&amp#27;[0m
+I am successfully landed on Account Management page 
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be navigated to the Account Management page&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_account_management_page()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 26, 2024 6:12:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 26, 2024 6:12:47 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Manage Location Link&quot;, &quot;Agency Page Navigation Functionality&quot;](2)" classname="TestRunner.Testrunner" time="0.17">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Manage Location Link                                                      &amp#27;[90m# src/test/resources/Features/agency.feature:16&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on the Manage Location link&amp#27;[0m                                          &amp#27;[90m# StepDefinitions.Agency.i_click_on_the_manage_location_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Location Management page&amp#27;[0m                        &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_location_management_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Manage Users Link&quot;, &quot;Agency Page Navigation Functionality&quot;](3)" classname="TestRunner.Testrunner" time="0.01">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Manage Users Link                                                         &amp#27;[90m# src/test/resources/Features/agency.feature:20&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on the Manage Users link&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Agency.i_click_on_the_manage_users_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the User Management page&amp#27;[0m                            &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_user_management_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Manage Account2 Link&quot;, &quot;Agency Page Navigation Functionality&quot;](4)" classname="TestRunner.Testrunner" time="0.01">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Manage Account2 Link                                                      &amp#27;[90m# src/test/resources/Features/agency.feature:24&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on the Manage Account2 link&amp#27;[0m                                          &amp#27;[90m# StepDefinitions.Agency.i_click_on_the_manage_account2_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Account Management page again&amp#27;[0m                   &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_account_management_page_again()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add New Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;](5)" classname="TestRunner.Testrunner" time="0.01">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Add New Account Link                                                      &amp#27;[90m# src/test/resources/Features/agency.feature:28&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on click here of addNewAccount link&amp#27;[0m                                  &amp#27;[90m# StepDefinitions.Agency.i_click_on_click_here_of_add_new_account_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Create ResponseScribe Account page&amp#27;[0m              &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_create_response_scribe_account_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add an Agency Link&quot;, &quot;Agency Page Navigation Functionality&quot;](6)" classname="TestRunner.Testrunner" time="0.009">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Add an Agency Link                                                        &amp#27;[90m# src/test/resources/Features/agency.feature:32&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on click here of addAgency link&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Agency.i_click_on_click_here_of_add_agency_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Create Agency Account page&amp#27;[0m                      &amp#27;[90m# StepDefinitions.Agency.i_should_be_navigated_to_the_create_agency_account_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Agency  Reporting Link&quot;, &quot;Agency Reporting page Navigation Functionality&quot;](7)" classname="TestRunner.Testrunner" time="0.007">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agencyReportingDashboard.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Agency  Reporting Link                                                    &amp#27;[90m# src/test/resources/Features/agencyReportingDashboard.feature:12&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agencyReportingDashboard.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Agency Reporting button&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Agency_Reporting.i_click_on_agency_reporting_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mi should be navigated to the Agency reporting page&amp#27;[0m                           &amp#27;[90m# StepDefinitions.Agency_Reporting.i_should_be_navigated_to_the_agency_reporting_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Agency Resources link&quot;, &quot;Agency Resources page Navigation Functionality&quot;](8)" classname="TestRunner.Testrunner" time="0.013">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agencyResources.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Agency Resources link                                                     &amp#27;[90m# src/test/resources/Features/agencyResources.feature:12&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/agencyResources.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on  Agency Resources button&amp#27;[0m                                          &amp#27;[90m# StepDefinitions.Agency_Resources.i_click_on_agency_resources_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI  should be naviagted to Tools & Resources  page&amp#27;[0m                            &amp#27;[90m# StepDefinitions.Agency_Resources.i_should_be_naviagted_to_tools_resources_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Client Reporting Link&quot;, &quot;Client  Reporting page Navigation Functionality&quot;](9)" classname="TestRunner.Testrunner" time="0.013">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/clientReportingDashboard.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Client Reporting Link                                                     &amp#27;[90m# src/test/resources/Features/clientReportingDashboard.feature:12&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/clientReportingDashboard.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Client Reporting button&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Client_Reporting.i_click_on_client_reporting_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the clinet reporting page&amp#27;[0m                           &amp#27;[90m# StepDefinitions.Client_Reporting.i_should_be_navigated_to_the_clinet_reporting_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Error Notifications link&quot;, &quot;Error Notifications page Navigation Functionality&quot;](10)" classname="TestRunner.Testrunner" time="0.011">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/errorNotificationsDashboard.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Error Notifications link                                                  &amp#27;[90m# src/test/resources/Features/errorNotificationsDashboard.feature:12&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/errorNotificationsDashboard.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI clicks on Error Notifications button&amp#27;[0m                                       &amp#27;[90m# StepDefinitions.Error_Notification.i_clicks_on_error_notifications_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be naviagted to Manage Error Notifications  page&amp#27;[0m                    &amp#27;[90m# StepDefinitions.Error_Notification.i_should_be_naviagted_to_manage_error_notifications_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Successful login and navigation to the home page&quot;, &quot;Home page Functionality&quot;](11)" classname="TestRunner.Testrunner" time="0.012">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/homepage.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successful login and navigation to the home page                          &amp#27;[90m# src/test/resources/Features/homepage.feature:3&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/homepage.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;login is successful with valid credentials&quot;, &quot;Login Page of ShoutAboutUs page&quot;](12)" classname="TestRunner.Testrunner" time="0.013">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Login.i_am_on_the_login_page(Login.java:20)
+	at ✽.I am  on the login page(file:///E:/DemoSAU/src/test/resources/Features/login.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: login is successful with valid credentials &amp#27;[90m# src/test/resources/Features/login.feature:3&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am  on the login page&amp#27;[0m                      &amp#27;[90m# StepDefinitions.Login.i_am_on_the_login_page()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Login.i_am_on_the_login_page(Login.java:20)
+	at ✽.I am  on the login page(file:///E:/DemoSAU/src/test/resources/Features/login.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI have entered the username and password&amp#27;[0m      &amp#27;[90m# StepDefinitions.Login.i_have_entered_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept terms and conditions&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Login.i_accept_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on login button&amp#27;[0m                        &amp#27;[90m# StepDefinitions.Login.i_click_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI am navigated to the home page&amp#27;[0m               &amp#27;[90m# StepDefinitions.Login.i_am_navigated_to_the_home_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Settings link&quot;, &quot;Settings page Navigation Functionality&quot;](13)" classname="TestRunner.Testrunner" time="0.009">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6118a296aa593709602b51e6d63bc580" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/settings.feature:4)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Settings link                                                             &amp#27;[90m# src/test/resources/Features/settings.feature:12&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the login page of ShoutAboutUS&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6118a296aa593709602b51e6d63bc580, get {url=https://shoutab.us/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55793/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6118a296aa593709602b51e6d63bc580
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.Home.i_am_on_the_login_page_of_shout_about_us(Home.java:17)
+	at ✽.I am on the login page of ShoutAboutUS(file:///E:/DemoSAU/src/test/resources/Features/settings.feature:4)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter the username  and password&amp#27;[0m                                           &amp#27;[90m# StepDefinitions.Home.i_enter_the_username_and_password()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI accept the terms and conditions&amp#27;[0m                                             &amp#27;[90m# StepDefinitions.Home.i_accept_the_terms_and_conditions()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on the login button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Home.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the home page of SuperAdmin&amp#27;[0m                         &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_home_page_of_super_admin()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select the ResponseScribe option from the dropdown menu&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be navigated to the Welcome page Dashboard of Agency ResponseScribe&amp#27;[0m &amp#27;[90m# StepDefinitions.Home.i_should_be_navigated_to_the_welcome_page_dashboard_of_agency_response_scribe()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Settings button&amp#27;[0m                                                   &amp#27;[90m# StepDefinitions.Settings.i_click_on_settings_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be naviagted to Settings  page&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.Settings.i_should_be_naviagted_to_settings_page()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--1937629759\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 2 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add an Agency Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Add an Agency Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add New Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Add New Account Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login and navigation to the home page&quot;, &quot;Home page Functionality&quot;)">runScenario("Successful login and navigation to the home page", "Home page Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;login is successful with valid credentials&quot;, &quot;Login Page of ShoutAboutUs page&quot;)">runScenario("login is successful with valid credentials", "Login Page of ShoutAboutUs page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Agency Resources link&quot;, &quot;Agency Resources page Navigation Functionality&quot;)">runScenario("Agency Resources link", "Agency Resources page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Manage Location Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Manage Location Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Manage Account2 Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Manage Account2 Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Client Reporting Link&quot;, &quot;Client  Reporting page Navigation Functionality&quot;)">runScenario("Client Reporting Link", "Client  Reporting page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Error Notifications link&quot;, &quot;Error Notifications page Navigation Functionality&quot;)">runScenario("Error Notifications link", "Error Notifications page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Agency  Reporting Link&quot;, &quot;Agency Reporting page Navigation Functionality&quot;)">runScenario("Agency  Reporting Link", "Agency Reporting page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Manage Users Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Manage Users Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Settings link&quot;, &quot;Settings page Navigation Functionality&quot;)">runScenario("Settings link", "Settings page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.Testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Manage Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">runScenario("Manage Account Link", "Agency Page Navigation Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestRunner.Testrunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add an Agency Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Add an Agency Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add an Agency Link","Agency Page Navigation Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5940ba097e72e1ee0b3bb22a3e52a887, clickElement {id=f.F975115BC5C6C6DEE99F9D54B937A1AD.d.6C75E97A4D86815620121ED051B0358F.e.1876}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64574/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5940ba097e72e1ee0b3bb22a3e52a887)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: 5940ba097e72e1ee0b3bb22a3e52a887
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add New Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Add New Account Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add New Account Link","Agency Page Navigation Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;select2-selection__rendered&quot; id=&quot;select2-companyss-container&quot; title=&quot;...&quot;&gt;All&lt;/span&gt; is not clickable at point (1252, 27). Other element would receive the click: &lt;div class=&quot;bootbox modal fade bootbox-confirm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b484b6e4adadc06f1fca7cb7c55e3f8d, clickElement {id=f.7211E986030DE5A33C4EB88CFBC7E348.d.313B9D5E20D233A80BB43EF744905840.e.1879}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64518/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b484b6e4adadc06f1fca7cb7c55e3f8d)] -&gt; xpath: //span[@id=&apos;select2-companyss-container&apos;]]
+Session ID: b484b6e4adadc06f1fca7cb7c55e3f8d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinitions.Home.i_select_the_response_scribe_option_from_the_dropdown_menu(Home.java:51)
+	at ✽.I select the ResponseScribe option from the dropdown menu(file:///E:/DemoSAU/src/test/resources/Features/agency.feature:9)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestRunner.Testrunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful login and navigation to the home page&quot;, &quot;Home page Functionality&quot;)">
+                  </a> <!-- runScenario("Successful login and navigation to the home page", "Home page Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful login and navigation to the home page","Home page Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login is successful with valid credentials&quot;, &quot;Login Page of ShoutAboutUs page&quot;)">
+                  </a> <!-- runScenario("login is successful with valid credentials", "Login Page of ShoutAboutUs page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login is successful with valid credentials","Login Page of ShoutAboutUs page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Agency Resources link&quot;, &quot;Agency Resources page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Agency Resources link", "Agency Resources page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Agency Resources link","Agency Resources page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Manage Location Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Manage Location Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Manage Location Link","Agency Page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Manage Account2 Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Manage Account2 Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Manage Account2 Link","Agency Page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Client Reporting Link&quot;, &quot;Client  Reporting page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Client Reporting Link", "Client  Reporting page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Client Reporting Link","Client  Reporting page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Error Notifications link&quot;, &quot;Error Notifications page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Error Notifications link", "Error Notifications page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Error Notifications link","Error Notifications page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Agency  Reporting Link&quot;, &quot;Agency Reporting page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Agency  Reporting Link", "Agency Reporting page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Agency  Reporting Link","Agency Reporting page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Manage Users Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Manage Users Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Manage Users Link","Agency Page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Settings link&quot;, &quot;Settings page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Settings link", "Settings page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Settings link","Settings page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Manage Account Link&quot;, &quot;Agency Page Navigation Functionality&quot;)">
+                  </a> <!-- runScenario("Manage Account Link", "Agency Page Navigation Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Manage Account Link","Agency Page Navigation Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--1937629759\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestRunner.Testrunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'TestRunner.Testrunner')
+data.setCell(0, 3, 44813);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'TestRunner.Testrunner')
+data.setCell(1, 3, 36420);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'TestRunner.Testrunner')
+data.setCell(2, 3, 36049);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'TestRunner.Testrunner')
+data.setCell(3, 3, 35867);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'TestRunner.Testrunner')
+data.setCell(4, 3, 35312);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'TestRunner.Testrunner')
+data.setCell(5, 3, 35292);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'TestRunner.Testrunner')
+data.setCell(6, 3, 34967);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'TestRunner.Testrunner')
+data.setCell(7, 3, 34479);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'TestRunner.Testrunner')
+data.setCell(8, 3, 34422);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'TestRunner.Testrunner')
+data.setCell(9, 3, 29329);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'TestRunner.Testrunner')
+data.setCell(10, 3, 21842);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'TestRunner.Testrunner')
+data.setCell(11, 3, 21407);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'TestRunner.Testrunner')
+data.setCell(12, 3, 20237);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestRunner.Testrunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@2296127)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Manage Account Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Manage Location Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">45181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Manage Users Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">81231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Manage Account2 Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">117099 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Add New Account Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">151522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Add an Agency Link", "Agency Page Navigation Functionality")</span>
+                <span class="method-start">173366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Agency  Reporting Link", "Agency Reporting page Navigation Functionality")</span>
+                <span class="method-start">194775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Agency Resources link", "Agency Resources page Navigation Functionality")</span>
+                <span class="method-start">230068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Client Reporting Link", "Client  Reporting page Navigation Functionality")</span>
+                <span class="method-start">266489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Error Notifications link", "Error Notifications page Navigation Functionality")</span>
+                <span class="method-start">301457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful login and navigation to the home page", "Home page Functionality")</span>
+                <span class="method-start">336770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("login is successful with valid credentials", "Login Page of ShoutAboutUs page")</span>
+                <span class="method-start">366100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Settings link", "Settings page Navigation Functionality")</span>
+                <span class="method-start">386338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">420819 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
